@@ -56,3 +56,112 @@ The variable redshift value is based on the increase in wavelength of light emit
 | 3 | 1.237663e+18   | 338.741038 | -0.402828  | 22.13682| 23.77656| 21.61162| 20.50454| 19.25010| 4192   | 301      | 3       | 214      | 1.030107e+19  | GALAXY | 0.932346 | 9149  | 58039 | 775      |
 | 4 | 1.237680e+18   | 345.282593 | 21.183866  | 19.43718| 17.58028| 16.49747| 15.97711| 15.54461| 8102   | 301      | 3       | 137      | 6.891865e+18  | GALAXY | 0.116123 | 6121  | 56187 | 842      |
 
+```
+Model: Logistic Regression
+Accuracy: 0.9559
+Classification Report:
+              precision    recall  f1-score   support
+
+      GALAXY       0.96      0.96      0.96     17845
+         QSO       0.95      0.88      0.91      5700
+        STAR       0.95      1.00      0.97      6455
+
+    accuracy                           0.96     30000
+   macro avg       0.95      0.95      0.95     30000
+weighted avg       0.96      0.96      0.96     30000
+
+
+--------------------------------------------------
+
+Model: Random Forest
+Accuracy: 0.9770
+Classification Report:
+              precision    recall  f1-score   support
+
+      GALAXY       0.98      0.99      0.98     17845
+         QSO       0.96      0.92      0.94      5700
+        STAR       0.99      1.00      1.00      6455
+
+    accuracy                           0.98     30000
+   macro avg       0.98      0.97      0.97     30000
+weighted avg       0.98      0.98      0.98     30000
+
+
+--------------------------------------------------
+
+Model: Support Vector Machine
+Accuracy: 0.9615
+Classification Report:
+              precision    recall  f1-score   support
+
+      GALAXY       0.97      0.97      0.97     17845
+         QSO       0.97      0.91      0.94      5700
+        STAR       0.94      1.00      0.97      6455
+
+    accuracy                           0.96     30000
+   macro avg       0.96      0.96      0.96     30000
+weighted avg       0.96      0.96      0.96     30000
+
+
+--------------------------------------------------
+
+Model: Decision Tree
+Accuracy: 0.9654
+Classification Report:
+              precision    recall  f1-score   support
+
+      GALAXY       0.95      0.99      0.97     17845
+         QSO       0.97      0.85      0.91      5700
+        STAR       1.00      1.00      1.00      6455
+
+    accuracy                           0.97     30000
+   macro avg       0.97      0.95      0.96     30000
+weighted avg       0.97      0.97      0.96     30000
+
+
+--------------------------------------------------
+
+Model: Neural Network
+Accuracy: 0.9722
+Classification Report:
+              precision    recall  f1-score   support
+
+      GALAXY       0.98      0.98      0.98     17845
+         QSO       0.96      0.93      0.94      5700
+        STAR       0.97      1.00      0.98      6455
+
+    accuracy                           0.97     30000
+   macro avg       0.97      0.97      0.97     30000
+weighted avg       0.97      0.97      0.97     30000
+
+
+--------------------------------------------------
+
+Model: Soft voting Ensemble
+Ensemble Model Accuracy:  0.9717666666666667
+Ensemble Model Classification Report: 
+               precision    recall  f1-score   support
+
+      GALAXY       0.97      0.98      0.98     17845
+         QSO       0.97      0.91      0.94      5700
+        STAR       0.98      1.00      0.99      6455
+
+    accuracy                           0.97     30000
+   macro avg       0.97      0.96      0.97     30000
+weighted avg       0.97      0.97      0.97     30000
+
+--------------------------------------------------
+
+Model: Hard voting Ensemble
+Ensemble Model Accuracy:  0.9710333333333333
+Ensemble Model Classification Report: 
+               precision    recall  f1-score   support
+
+      GALAXY       0.97      0.98      0.98     17845
+         QSO       0.97      0.91      0.94      5700
+        STAR       0.97      1.00      0.99      6455
+
+    accuracy                           0.97     30000
+   macro avg       0.97      0.96      0.97     30000
+weighted avg       0.97      0.97      0.97     30000
+```
