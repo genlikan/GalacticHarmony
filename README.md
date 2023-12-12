@@ -56,6 +56,18 @@ The variable redshift value is based on the increase in wavelength of light emit
 | 3 | 1.237663e+18   | 338.741038 | -0.402828  | 22.13682| 23.77656| 21.61162| 20.50454| 19.25010| 4192   | 301      | 3       | 214      | 1.030107e+19  | GALAXY | 0.932346 | 9149  | 58039 | 775      |
 | 4 | 1.237680e+18   | 345.282593 | 21.183866  | 19.43718| 17.58028| 16.49747| 15.97711| 15.54461| 8102   | 301      | 3       | 137      | 6.891865e+18  | GALAXY | 0.116123 | 6121  | 56187 | 842      |
 
+# Models and Accuracies
+| Model                   | Accuracy |
+|-------------------------|----------|
+| Logistic Regression     | 0.9559   |
+| Random Forest           | 0.9770   |
+| Support Vector Machine  | 0.9615   |
+| Decision Tree           | 0.9654   |
+| Neural Network          | 0.9722   |
+| Soft Voting Ensemble    | 0.9718   |
+| Hard Voting Ensemble    | 0.9710   |
+
+
 ```
 Model: Logistic Regression
 Accuracy: 0.9559
